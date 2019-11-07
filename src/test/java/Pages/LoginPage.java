@@ -81,6 +81,7 @@ public class LoginPage {
 
     public void setOptions() {
         Random random = new Random();
+        /* this loop does not select 3 different ways of development: sometimes Random creates same numbers in a row */
         for (int i = 0; i < 3; i++) {
             int index = random.nextInt(options.size());
             options.get(index).click();
